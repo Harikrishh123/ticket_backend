@@ -1,7 +1,7 @@
 
 const mongoose = require('mongoose')
 
-const mongUrl = "mongodb://127.0.0.1:27017/ticket"
+const mongUrl = "mongodb://0.0.0.0:27017/ticket"
 
 const connectToMo = () => {
     mongoose.connect(mongUrl).then((e) => console.log("Mongoose is connected"))
